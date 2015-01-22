@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Menu-->
+    <string name="app_name">CookBook</string>
+    <string name="main_menu">Menu Główne</string>
+    <string name="login">Niezalogowany</string>
+    <string name="find">Szukaj przepisów</string>
+    <string name="share">Podziel się swoim przepisem</string>
+    <string name="options">Zaloguj się/Zarejestruj się</string>
+    <string name="help">Pomoc</string>
+
+    <!--First Step-->
+    <string name="fsTitle">Pierwszy krok</string>
+    <string name="fsName">Podaj nazwę dania</string>
+    <string name="fsComponent">Nazwa i ilość składnika</string>
+    <string name="btnAdd">Dodaj składnik</string>
+    <string name="btnNextStep">Następny krok</string>
+
+    <!--Second Step-->
+    <string name="ssTitle">Drugi krok</string>
+    <string name="etIntroduction">Napisz kilka słów wprowadzenia, na temat potrawy</string>
+    <string name="etSteps">Przygotowanie krok po kroku...</string>
+
+
+
+    <!--Third Step-->
+    <string name="tsTitle">Trzeci krok</string>
+    <string name="tsDescription">Dodaj zdjęcie posiłku</string>
+    <string name="btnTakePhoto">Zrób zdjęcie</string>
+    <string name="btnTakeFromGallery">Galeria</string>
+    <string name="etPreparationMinutes">Czas przygotowania posiłku (w minutach)</string>
+    <string name="etCookingMinutes">Czas pieczenia/gotowania potrawy</string>
+    <string name="etServing">Dla ilu osób?</string>
+
+    <!--Login-->
+    <string name="etLogin">Adres e-mail</string>
+    <string name="etPassword">Haslo</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnLoginIn">Zaloguj się</string>
+
+    <!--FullRecipes -->
+    <string name="tvIngredientsTitle">Niezbędne składniki</string>
+    <string name="tvStepsTitle">Przygotowanie</string>
+    <string name="tvIntroductionTitle">Opis potrawy</string>
+    <string name="tvOwnerId">Zaloguj się aby sprawdzić szczegóły i komentować</string>
+    <string name="btnDelete">Usuń</string>
+    <string name="btnEdit">Edytuj</string>
+    <string name="tvHowManyLikes">Ilość polubień: 0</string>
+    <string name="btnLike">Lubię to!</string>
+    <string name="timeToPrepare">Czas przygotowania</string>
+    <string name="howManyServs">Dla 0 osoby</string>
+
+    <!-- Row recipeFavourite-->
+    <string name="titleFavourite">Moje ulubione</string>
+
+
+    <drawable name="actionbar_background">#ffff6310</drawable>
+    <color name="color_title">#ffffffff</color>
+
+
+</resources>

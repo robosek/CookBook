@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffd8d8d8"
+    tools:context=".SecondStepActivity">
+
+<TextView
+        android:text="@string/ssTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:textSize="35sp"
+    />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:id="@+id/etIntroduction"
+        android:hint="@string/etIntroduction"
+        android:background="@drawable/rounded_corner_white"
+        android:gravity="top"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/etSteps"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/etIntroduction"
+        android:layout_above="@+id/btnNextStep"
+        android:hint="@string/etSteps"
+        android:background="@drawable/rounded_corner_white"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/btnNextStep"
+        android:id="@+id/btnNextStep"
+        android:background="@drawable/mybutton"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ThirdStepActivity"
+    android:background="#ffd8d8d8">
+
+    <TextView
+        android:text="@string/tsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:textSize="35sp"
+        android:gravity="center"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tsDescription"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tsDescription"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:layout_below="@id/tsDescription"
+    android:id="@+id/linear">
+    <com.makeramen.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPicture"
+        android:layout_marginTop="10dp"
+        android:id="@+id/pictureView"
+        android:layout_above="@+id/btnFinish"
+        android:src="@drawable/talerz"
+        android:layout_weight="0.5"
+        app:riv_oval="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativePhoto"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnPicture"
+            android:text="@string/btnTakePhoto"
+
+            android:background="@drawable/mybutton"
+            android:textColor="#FFFFFF"
+
+
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnPictureFromGallery"
+            android:text="@string/btnTakeFromGallery"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/btnPicture"
+            android:background="@drawable/mybutton"
+            android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+</LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPreparationMinutes"
+        android:hint="@string/etPreparationMinutes"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCookingMinutes"
+        android:hint="@string/etCookingMinutes"
+        android:layout_below="@id/etPreparationMinutes"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etServings"
+        android:hint="@string/etServing"
+        android:layout_below="@id/etCookingMinutes"
+        android:layout_above="@id/btnFinish"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnFinish"
+        android:text="Dodaj gotowy przepis"
+        android:background="@drawable/mybutton"
+        android:textColor="#FFFFFF"
+        />
+</RelativeLayout>

@@ -1,0 +1,374 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SecondStepActivity"
+    android:background="#ffd8d8d8">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/formulae"
+           >
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/rounded_corner_image"
+         android:id="@+id/linearTop">
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="180dp"
+             android:id="@+id/tvTitle"
+             android:background="@drawable/talerz"
+
+             android:textSize="35sp"
+             android:gravity="center"
+             android:textColor="#ffffffff"
+             />
+
+         </LinearLayout>
+
+
+
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/timeToPrepare"
+                  android:layout_weight="0.5"
+                  android:text="@string/timeToPrepare"
+                  android:textSize="18dp"
+                  android:layout_below="@+id/linearTop"
+                  android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/servings"
+                    android:layout_weight="0.5"
+                    android:text="@string/howManyServs"
+                    android:textSize="18dp"
+                    android:layout_below="@id/timeToPrepare"
+                    />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvIntroductionTitle"
+                android:layout_below="@id/servings"
+                android:text="@string/tvIntroductionTitle"
+                android:layout_marginTop="10dp"
+
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/actionbar_background"
+                />
+
+
+            <ViewSwitcher
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vwSwitchIntroduction"
+                android:layout_below="@id/tvIntroductionTitle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_below="@id/tvIntroductionTitle"
+                    android:id="@+id/tvIntroduction"
+                    android:background="#FFFFFF"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etIntroduction"
+                    android:background="#FFFFCC"
+                    android:textSize="17dp"/>
+
+
+                </ViewSwitcher>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvIngredientsTitle"
+                android:layout_below="@id/vwSwitchIntroduction"
+                android:text="@string/tvIngredientsTitle"
+                android:layout_marginTop="5dp"
+
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/actionbar_background"/>
+
+
+            <ViewSwitcher
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vwSwitchIngredients"
+                android:layout_below="@id/tvIngredientsTitle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_below="@id/tvIngredientsTitle"
+                android:id="@+id/tvIngredients"
+                android:background="#FFFFFF"
+
+              />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etIngredients"
+                    android:background="#FFFFCC"
+                    android:textSize="17dp"/>
+            </ViewSwitcher>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvStepsTitle"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:layout_below="@+id/vwSwitchIngredients"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/actionbar_background"
+                android:id="@+id/tvStepsTitle"
+
+                android:gravity="center"
+                />
+
+
+            <ViewSwitcher
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vwSwitchSteps"
+                android:layout_below="@id/tvStepsTitle">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_below="@id/tvStepsTitle"
+                android:id="@+id/tvSteps"
+                android:background="#FFFFFF"
+
+                />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etSteps"
+                    android:background="#FFFFCC"
+                    android:textSize="17dp"
+                    />
+
+
+
+            </ViewSwitcher>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vwSwitchSteps"
+                android:weightSum="1.0"
+                android:id="@+id/linearbottom">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvOwnerId"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/vwSwitchSteps"
+                    android:text="@string/tvOwnerId"
+                    android:textSize="16dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_corner_yellowxml"
+
+                    />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tvCreatedTime"
+                   android:layout_weight="0.5"
+                   android:textSize="14dp"
+                   android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLikes"
+                android:weightSum="1.0"
+                android:layout_below="@+id/linearbottom"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHowManyLikes"
+                    android:text="@string/tvHowManyLikes"
+                    android:layout_weight="0.5"
+                    android:textSize="17dp"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnLike"
+                    android:text="@string/btnLike"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/mybutton"
+                    android:textColor="#FFFFFF"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearEditDelete"
+                android:layout_below="@+id/linearLikes"
+                android:weightSum="1.0"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btnDelete"
+                    android:text="@string/btnDelete"
+                    android:textSize="16dp"
+
+
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btnEdit"
+                    android:text="@string/btnEdit"
+                    android:textSize="16dp"
+                   />
+                </LinearLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeComments"
+                    android:layout_below="@id/linearEditDelete"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Komentarze"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/actionbar_background"
+                        android:id="@+id/tvCommentsTitle"
+
+                        android:gravity="center"
+                        />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/lvLista"
+
+                        android:layout_below="@id/tvCommentsTitle"
+                        android:background="#FFFFFF"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etComment"
+                        android:layout_below="@id/lvLista"
+                        android:layout_marginTop="10dp"
+                        android:hint="Dodaj komenatarz..."
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Dodaj"
+                        android:id="@+id/btnAddComment"
+                        android:layout_below="@id/etComment"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/mybutton"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

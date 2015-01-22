@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:background="#ffd8d8d8"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/formulae" >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTryToLogIn"
+
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Logowanie"
+        android:textSize="20dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_marginTop="5dp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:inputType="textEmailAddress"
+
+        android:hint="@string/etLogin"
+
+
+        android:background="@drawable/group_top"
+
+        android:layout_below="@id/tvTryToLogIn"
+
+        />
+
+    <EditText
+
+        android:id="@+id/password"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:layout_below="@id/email"
+
+        android:inputType="textPassword"
+
+        android:background="@drawable/group_bottom"
+
+        android:hint="@string/etPassword"
+
+
+
+        />
+
+    <Button
+
+        android:id="@+id/login"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:layout_below="@id/password"
+
+        android:text="@string/btnLoginIn"
+
+        android:background="@drawable/mybutton"
+
+        android:textSize="21dp"
+        android:layout_marginTop="5dp"
+
+        android:textColor="#FFFFFF"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noAccountYet"
+        android:layout_below="@id/login"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Nie masz jeszcze konta?"
+        android:textSize="20dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="#FFFFFF"/>
+    <EditText
+
+        android:layout_marginTop="5dp"
+        android:id="@+id/emailSignUp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:layout_below="@id/noAccountYet"
+
+        android:hint="Podaj adres e-mail"
+
+        android:background="@drawable/group_top"
+
+
+        />
+    <EditText
+
+        android:id="@+id/firstnameSignUp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:layout_below="@id/emailSignUp"
+        android:background="@drawable/gropu_row"
+
+        android:hint="Podaj imię"
+
+        />
+
+    <EditText
+
+        android:id="@+id/secondNameSignUp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:background="@drawable/gropu_row"
+
+        android:layout_below="@id/firstnameSignUp"
+
+        android:hint="Podaj nazwisko"
+
+        />
+
+    <EditText
+
+        android:id="@+id/passwordSignUp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:layout_below="@id/secondNameSignUp"
+
+        android:inputType="textPassword"
+
+        android:background="@drawable/group_bottom"
+
+        android:hint="@string/etPassword"
+
+        />
+    <Button
+
+        android:id="@+id/btnSignUp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+        android:layout_below="@id/passwordSignUp"
+
+        android:text="Zarejestruj się"
+
+        android:background="@drawable/mybutton"
+
+        android:textSize="21dp"
+
+        android:textColor="#FFFFFF"
+
+        android:layout_marginTop="5dp"
+
+        />
+
+
+</RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

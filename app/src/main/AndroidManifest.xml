@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.komputer_robo.cookbook" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActivityTheme"
+        >
+        <activity
+            android:name=".MenuActivity_"
+            android:label="@string/app_name"
+
+           >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstStepActivity_"/>
+        <activity android:name=".SecondStepActivity_"/>
+        <activity android:name=".ThirdStepActivity_"/>
+        <activity android:name=".ShowRecipes.ShowRecipesActivity_"/>
+        <activity android:name=".ShowRecipes.FullRecipesActivity_"/>
+        <activity android:name=".LoginActivity_"/>
+        <activity android:name=".ShowRecipes.ShowFavouritesActivity_"/>
+
+
+
+    </application>
+<uses-permission android:name="android.permission.CAMERA"/>
+ <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

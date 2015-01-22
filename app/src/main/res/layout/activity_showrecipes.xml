@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ShowRecipesActivity"
+
+    >
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Lista przepisów"
+    android:textSize="30dp"
+    android:id="@+id/title"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/lvLista"
+        android:layout_above="@+id/btnBack"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+
+        />
+
+<Button
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Wróc do menu"
+    android:textColor="#FFFFFF"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/btnBack"
+    android:background="@drawable/mybutton"/>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
